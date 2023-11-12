@@ -173,7 +173,6 @@ body {
   height: 100vh;
   background-color: rgba(17, 17, 17, 0.8);
   backdrop-filter: blur(10px);
-  text-align: center;
   transition: 0.3s ease-in-out;
 }
 .navigation-list li {
