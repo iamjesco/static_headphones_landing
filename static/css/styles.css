@@ -97,7 +97,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 70rem;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -243,13 +243,10 @@ body {
   display: flex;
   align-items: center;
 }
-.landing-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-}
 .landing-text {
   position: relative;
   z-index: 1;
+  max-width: 650px;
 }
 @media only screen and (width <= 48em) {
   .landing-text {
@@ -261,7 +258,7 @@ body {
   }
 }
 .landing-title {
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 1.4;
 }
 .landing-title i {
