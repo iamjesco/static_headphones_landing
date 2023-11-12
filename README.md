@@ -1,0 +1,1 @@
+# Landing page template for headphones

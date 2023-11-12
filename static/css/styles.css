@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+html, body {
+  height: 100%;
+}
+
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+label {
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+main, footer, header, aside, div, section, nav {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: url("../images/main-bg.png") center/cover no-repeat;
+}
+
+.container {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.btn {
+  transition: 0.3s ease-in-out;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  outline: 1px solid transparent;
+}
+
+.btn-orange {
+  background: #EA6724;
+}
+.btn-orange:hover {
+  background: #993e0f;
+}
+
+.btn-outline {
+  outline: 1px solid #3CADCF;
+}
+.btn-outline:hover {
+  background: #216d84;
+  outline: 1px solid transparent;
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+}
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.navigation-logo {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+.navigation-cta {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(17, 17, 17, 0.8);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.navigation-list li {
+  margin: 0 10rem;
+}
+.navigation-list-item {
+  position: relative;
+  width: 100%;
+  font-size: 4rem;
+  color: #aaa;
+  display: inline-block;
+  padding: 1rem 0;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 2rem;
+}
+.navigation-list-item::after {
+  width: 100%;
+  content: "";
+  height: 1px;
+  background-color: #3CADCF;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: 0.3s ease-in-out;
+}
+@media only screen and (width <= 48em) {
+  .navigation-list-item {
+    font-size: 3rem;
+  }
+}
+.navigation-list-item:hover {
+  color: #fff;
+}
+.navigation-list-item:hover::after {
+  transform: scaleX(1);
+}
+
+.fa-brands,
+.fa-solid {
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+}
+.fa-brands:hover,
+.fa-solid:hover {
+  color: #EA6724;
+}
+
+.fa-solid {
+  cursor: pointer;
+}
+@media only screen and (width <= 48em) {
+  .fa-solid {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (width <= 48em) {
+  .fa-brands {
+    display: none;
+  }
+}
+
+@keyframes nav-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.landing {
+  position: relative;
+  height: 100vh;
+  color: #ffffff;
+  outline: 1px solid #f00;
+  display: flex;
+  align-items: center;
+}
+.landing-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+.landing-text {
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (width <= 48em) {
+  .landing-text {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: rgba(17, 17, 17, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+  }
+}
+.landing-title {
+  font-size: 4rem;
+  line-height: 1.4;
+}
+.landing-title i {
+  color: #EA6724;
+}
+@media only screen and (width <= 48em) {
+  .landing-title {
+    font-size: 3rem;
+  }
+}
+.landing-pitch {
+  color: #bbbbbb;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.landing-footer {
+  display: flex;
+  gap: 2rem;
+}
+@media only screen and (width <= 48em) {
+  .landing-footer {
+    justify-content: center;
+  }
+}
+.landing-background {
+  height: 90vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

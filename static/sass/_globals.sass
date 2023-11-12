@@ -1,0 +1,54 @@
+
+//PROJECT FONT
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap')
+
+$main-orange-color: #EA6724
+$secondary-color: #3CADCF
+
+body
+  font-family: Roboto, sans-serif
+  //background-image: linear-gradient(#003749, #000000)
+  background: url("../images/main-bg.png") center/cover no-repeat
+  
+.container
+  width: 100%
+  max-width: 70rem
+  margin: 0 auto
+  padding: 0 2rem
+  //outline: 1px solid #3f0
+
+//  ====================================================
+//      MAIN CTA BTNS
+//  ====================================================
+
+.btn
+  transition: .3s ease-in-out
+  font-size: 1rem
+  color: #ffffff
+  padding: 1rem 3rem
+  border-radius: 20px
+  outline: 1px solid transparent
+  
+
+.btn-orange
+  background: $main-orange-color
+  &:hover
+    background: darken($main-orange-color, 20%)
+    //outline: 1px solid $main-orange-color
+    
+.btn-outline
+  outline: 1px solid $secondary-color
+  &:hover
+    background: darken($secondary-color, 20%)
+    outline: 1px solid transparent
+  
+//  ====================================================
+//      MEDIA QUERIES
+//  ====================================================
+
+@mixin bp-small
+  @media only screen and (width <= 48em)
+    @content
+
+

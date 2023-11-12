@@ -1,0 +1,54 @@
+
+.landing
+  position: relative
+  height: 100vh
+  color: #ffffff
+  outline: 1px solid #f00
+  display: flex
+  align-items: center
+  &-container
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr))
+    
+  &-text
+    position: relative
+    z-index: 1
+    +bp-small
+      text-align: center
+      padding: 2rem 1rem
+      background-color: rgba(#111, .6)
+      backdrop-filter: blur(5px)
+      border-radius: 20px
+    
+  &-title
+    font-size: 4rem
+    line-height: 1.4
+    i
+      color: $main-orange-color
+    +bp-small
+      font-size: 3rem
+      
+  &-pitch
+    color: #bbbbbb
+    font-size: 1.25rem
+    line-height: 1.6
+    margin-top: 1rem
+    margin-bottom: 2rem
+  
+  &-footer
+    display: flex
+    gap: 2rem
+    +bp-small
+      justify-content: center
+    
+  &-background
+    height: 90vh
+    position: absolute
+    bottom: 0
+    right: 0
+    z-index: 0
+    pointer-events: none
+
+
+
+
