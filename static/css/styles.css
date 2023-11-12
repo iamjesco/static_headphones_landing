@@ -159,7 +159,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
 }
-@media only screen and (width <= 48em) {
+@media only screen and (max-width: 48em) {
   .navigation-logo span {
     display: none;
   }
@@ -199,7 +199,7 @@ body {
   transition: 0.3s ease-in-out;
   margin-bottom: 2rem;
 }
-@media only screen and (width <= 48em) {
+@media only screen and (max-width: 48em) {
   .navigation-list-item {
     font-size: 3rem;
   }
@@ -216,7 +216,7 @@ body {
   transform-origin: center;
   transition: 0.3s ease-in-out;
 }
-@media only screen and (width <= 48em) {
+@media only screen and (max-width: 48em) {
   .navigation-list-item {
     font-size: 2.5rem;
   }
@@ -231,7 +231,7 @@ body {
   font-size: 2rem;
   display: none;
 }
-@media only screen and (width <= 48em) {
+@media only screen and (max-width: 48em) {
   .navigation-list-socials {
     display: block;
   }
@@ -251,19 +251,19 @@ body {
 .fa-bars {
   cursor: pointer;
 }
-@media only screen and (width <= 48em) {
+@media only screen and (max-width: 48em) {
   .fa-bars {
     font-size: 1.25rem;
   }
 }
 
-@media only screen and (width <= 48em) {
+@media only screen and (max-width: 48em) {
   .top-nav-socials {
     display: none;
   }
 }
 
-@media only screen and (width <= 48em) {
+@media only screen and (max-width: 48em) {
   .nav-buy-now {
     display: none;
   }
@@ -283,7 +283,7 @@ body {
   z-index: 1;
   max-width: 650px;
 }
-@media only screen and (width <= 48em) {
+@media only screen and (max-width: 48em) {
   .landing-text {
     text-align: center;
     padding: 2rem 1rem;
@@ -302,7 +302,7 @@ body {
 .landing-title i {
   color: #EA6724;
 }
-@media only screen and (width <= 48em) {
+@media only screen and (max-width: 48em) {
   .landing-title {
     font-size: 3rem;
   }
@@ -324,7 +324,7 @@ body {
   opacity: 0;
   animation: slide-in 1s forwards 0.9s;
 }
-@media only screen and (width <= 48em) {
+@media only screen and (max-width: 48em) {
   .landing-footer {
     justify-content: center;
   }

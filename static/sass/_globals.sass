@@ -35,7 +35,6 @@ body
   background: $main-orange-color
   &:hover
     background: darken($main-orange-color, 20%)
-    //outline: 1px solid $main-orange-color
     
 .btn-outline
   outline: 1px solid $secondary-color
@@ -49,7 +48,7 @@ body
 //  ====================================================
 
 @mixin bp-small
-  @media only screen and (width <= 48em)
+  @media only screen and (max-width: 48em)
     @content
 
 
