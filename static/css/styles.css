@@ -140,7 +140,11 @@ body {
 }
 .navigation-logo {
   color: #ffffff;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navigation-logo img {
+  height: 50px;
 }
 .navigation-cta {
   display: flex;
